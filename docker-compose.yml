@@ -1,0 +1,8 @@
+version: '2.1'
+services:
+  estimator:
+    build: est
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./my_flask_app:/app
